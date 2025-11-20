@@ -228,11 +228,11 @@ def main():
         
         if pilih == 1:
             clear()
-            level(lvl1.play)           
+            level(lvl1.play, lvl1.reset)           
                         
         elif pilih == 2:
             clear()
-            level(lvl2.play)
+            level(lvl2.play, lvl2.reset)
             
         elif pilih == 3:
             clear()

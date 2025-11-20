@@ -159,11 +159,12 @@ def check_item_encounter():
 if os.name == 'nt':
     import msvcrt
     def getch():
-        ch = msvcrt.getwch()
-        if ch in ('\x00', '\xe0'):
-            ch2 = msvcrt.getwch()
-            return ch + ch2
-        return ch
+        if msvcrt.kbhit():
+            ch = msvcrt.getwch()
+            if ch in ('\x00', '\xe0'):
+                ch += msvcrt.getwch()
+                return ch
+            return ch
 else:
     import termios, tty, select
 

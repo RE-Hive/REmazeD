@@ -91,11 +91,12 @@ def load_soal():
 if os.name=='nt':
     import msvcrt
     def getch():
-        ch = msvcrt.getwch()
-        if ch in ('\x00','\xe0'):
-            ch2 = msvcrt.getwch()
-            return ch + ch2
-        return ch
+        if msvcrt.kbhit():
+            ch = msvcrt.getwch()
+            if ch in ('\x00','\xe0'):
+                ch += msvcrt.getwch()
+                return ch
+            return None
 else:
     import select, tty, termios
     def getch():
@@ -168,6 +169,16 @@ def move_enemies():
                 if not any(en["x"]==nx and en["y"]==ny for en in enemies):
                     e["x"], e["y"] = nx, ny
         time.sleep(1.5)
+
+
+def flush_input():
+    if os.name == 'nt':
+        import msvcrt
+        while msvcrt.kbhit():
+            msvcrt.getch()
+    else:
+        import termios
+        termios.tcflush(sys.stdin, termios.TCIFLUSH)
         
 def enemy_encounter():
     global game_over, input_mode
@@ -183,8 +194,7 @@ def enemy_encounter():
             
             slowprint(f"Soal: {question['q']}", 0.03)
 
-            import termios
-            termios.tcflush(sys.stdin, termios.TCIFLUSH)
+            flush_input()
             
             answer = input("Jawaban: ")
             
@@ -245,8 +255,7 @@ def play():
         
         if not input_mode:
             ch = getch()
-        
-        ch=getch()
+            
         if ch is not None:
             if ch in ('q','Q'):
                 timer_running=False
