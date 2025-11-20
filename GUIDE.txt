@@ -1,0 +1,111 @@
+Peringatan Panduan Bermain Labyrinth Teka Teki !!!!
+
+Game ini dibuat dengan tujuan melatih ketelitian dan pemahaman pemain seputar Jawa Timur.
+segala pemainan di dalam game kami memiliki struktur dan cara bermain yang berbeda,
+semua yang terjadi kepada pemain saat bermain game bukanlah tanggung jawab kami.
+
+Cara bermain:
+
+Run file utama kami main.play
+pilih level yang ada
+
+disini kami memiliki 3 level stage Labyrinth :
+
+1. Labyrinth Pencari Harta:
+    
+    Disini anda bertugas sebagai Pemain yang mengumpulkan sejumlah harta yang berbeda,
+    untuk dapat membuka pintu keluar. Harta misterius didapatkan dengan cara menjawab
+    soal yang diberikan, jika jawaban benar maka harta menjadi milikmu, namun jika salah
+    harta akan kembali tersembunyi.
+
+
+@ = Player
+? = Harta misterius
+X = Pintu Yang terkunci
+E = Pintu keluar
+
+
+
+2. Labyrinth Grilya :
+
+    Disini anda berperan sebagai player yang kota anda sedang diserbu oleh parah penjajah,
+    anda harus mengalahkan semua musuh yang terdapat di kota anda untuk dapat membuka pintu keluar.
+    untuk mengalahkan musuh anda harus menjawab pertanyaan saat tertangkap musuh, 
+    jika anda salah menjawab maka GAME OVER.
+
+
+@ = Player
+K = Musuh 
+X = Pintu Yang Terkunci 
+E = Pintu keluar
+
+
+
+3. Labyrinth Tantangan :
+
+    Disini anda harus mencari jalan keluar dari beberapa pintu palsu, pintu asli tersembunyi di antara pintu palsu secara acak.
+    Pintu palsu adalah pintu yang dijaga oleh Guardian pertanyaan, Anda akan diberikan pertanyaan jika anda memasuki pitu palsu,
+    jawab pertanyaan dengan benar untuk lolos, Jika anda gagal menjawab maka GAME OVER.
+
+
+ @   = Player
+'E' = Guardian Yang Menyamar
+ E  = Pintu asli
+
+
+
+****JIKA ANDA MENEMUKAN BUG DIGAME KAMI*****
+Lporkan ke Instagram : @precious_env
+saran dan kritik anda adalah semangat kami......
+Hormat kami RE-Hive
+
+
+
+*English
+
+
+Warning, Guide for play the puzzle maze game !!!!!
+
+Labyrinth Puzzle Gameplay Guide Warning!!!!
+
+This game was created to train players' attention to detail and understanding of East Java.
+
+All games in our game have different structures and gameplay styles.
+We are not responsible for anything that happens to players while playing the game.
+
+How to play:
+
+Run our main file main.play
+Select an existing level
+
+Here, we have 3 Labyrinth stage levels:
+
+1. Treasure Hunter Labyrinth:
+
+    Here, you play as a player, collecting various treasures
+    to unlock the exit. You obtain mysterious treasures by answering the questions given. If you answer correctly, the treasure is yours; if you answer incorrectly, the treasure is hidden again.
+
+@ = Player
+? = Mysterious Treasure
+X = Locked Door
+E = Exit
+
+
+
+2. Labyrinth Guild:
+
+    Here, you play as a player whose city is being invaded by a powerful invader.
+    You must defeat all the enemies in your city to open the exit.
+    To defeat the enemies, you must answer questions while being captured.
+    If you answer incorrectly, the game is over.
+
+@ = Player
+K = Enemy
+X = Locked Door
+E = Exit
+
+
+****IF YOU FIND A BUG IN OUR GAME*****
+Report it to Instagram: @precious_env
+Your suggestions and criticisms are our motivation......
+Sincerely, RE-Hive
