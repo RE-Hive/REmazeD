@@ -96,7 +96,8 @@ if os.name=='nt':
             if ch in ('\x00','\xe0'):
                 ch += msvcrt.getwch()
                 return ch
-            return None
+            return ch
+        return None
 else:
     import select, tty, termios
     def getch():
@@ -287,3 +288,4 @@ def play():
         time.sleep(max(0.01-elapsed,0))
 
 #=============MAIN==============#
+play()
