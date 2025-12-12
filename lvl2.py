@@ -288,4 +288,3 @@ def play():
         time.sleep(max(0.01-elapsed,0))
 
 #=============MAIN==============#
-play()
